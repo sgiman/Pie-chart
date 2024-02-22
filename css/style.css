@@ -1,0 +1,377 @@
+/*******************************************************************
+ * style.css
+ * SGI PIE DIAGRAMMA v3.0 - 2023-10 (prototype)
+ * -----------------------------------------------------------------
+ * movingwheel-main (archive)
+ * Unical Label Generator - Flower 6.8 (js-original)
+ * https://uniwyze.com
+ ********************************************************************
+ * Modification by sgiman @ 2023-10
+ */
+h1 {
+    text-align:center;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.right{
+    float:right;
+    text-align:center;
+    width:50%;
+}
+.mode-buttons,
+.test-buttons{
+    float:left;
+    margin-bottom:10px;
+    margin-right: 5px;
+    cursor:pointer;
+}
+.mode-buttons.active{
+    background: #4ea84e;
+}
+.mode-buttons-wrapper,
+.test-buttons-wrapper-flower,
+.test-buttons-wrapper-tinctures,
+.test-buttons-wrapper-concetrates{
+    text-align: left;
+    width: 470px;
+    display: inline-block;
+    margin-bottom: 0;
+    clear: both;
+    float: right;
+}
+
+ul{
+    padding-left: 18px;
+}
+.show{
+    display:inline-block!important;
+}
+.hide{
+    display:none!important;
+}
+.wrapper-terpenes{
+    width:100%;
+}
+.taste-wrapper,
+.effects-wrapper,
+.other-wrapper,
+.type-wrapper{
+    width:228px;
+    vertical-align: top;
+    display:inline-block;
+}
+.effects-wrapper{
+    margin-right:10px;
+    /* float:right;*/
+}
+.other-wrapper{
+    /* clear:left;
+    float:left;*/
+}
+
+.taste-wrapper{
+    /*float:left;*/
+}
+
+.taste-wrapper label,
+.effects-wrapper label,
+.other-wrapper label,
+.type-wrapper label{
+    width:auto;
+}
+.checkbox-show-background label{
+    width:auto;
+}
+.checkbox-show-background{
+    float:left;
+    /* width:100%; */
+    /*text-align: right;
+    margin-right: 70px;*/
+}
+.checkbox-show-background label,
+.checkbox-show-background input{
+    margin-bottom:10px;
+}
+.checkbox-show-background input{
+    width:35px;
+}
+.checkbox-show-background label:nth-child(3){
+    margin-left: 50px;
+}
+.overflow-wrapper{
+    /*  height: 250px;
+    overflow: overlay;*/
+    float:left;
+}
+.checkbox{
+    cursor:pointer;
+    width: 20px;
+}
+.left{
+    float:left;
+    text-align:center;
+    width:50%;
+}
+form{
+    text-align:left;
+    width:470px;
+    display: inline-block;
+    margin-bottom:50px;
+    clear: both;
+    float: right;
+}
+form input{
+    /*float:right;*/
+    width: 40px;
+}
+form input.mg{
+    /*margin-left:20px;*/
+    margin-left:10px;
+}
+form input.mg-tinctures{
+    margin-left:10px;
+}
+fieldset span{
+    /*float:right;*/
+    margin-left:5px;
+    font-size: 12px;
+    font-weight:bold;
+}
+fieldset p{
+    font-weight:bold;
+}
+form .wrapper{
+    border: 1px solid #ccc;
+    margin-bottom:10px;
+}
+form .wrapper.main-properties{
+    padding-top:10px;
+    clear: both;
+}
+.wrapper.custom-cont{
+    clear:both;
+}
+.badge{
+    display:inline-block;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 0 5px 5px;
+}
+.badge-terpene{
+    display:inline-block;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 0 5px 5px;
+    border:1px solid #ccc;
+}
+form .wrapper.main-properties input{
+    width:55%;
+}
+form .wrapper.main-properties input#net-weight{
+    width:40px;
+}
+form fieldset.radio input{
+    float:none;
+}
+form fieldset.checkbox input{
+    float:left;
+    margin-right:15px;
+    cursor:pointer;
+}
+form label{
+    text-align:left;
+    margin-right:10px;
+    width:170px;
+    display:inline-block;
+}
+form .submit{
+    width:100px;
+    cursor:pointer;
+    clear:both;
+    float: right;
+    margin-bottom:10px;
+}
+form fieldset{
+    border:0;
+    margin-bottom:0px;
+}
+
+/*------------
+    ALL ID
+--------------*/
+#canvas{
+    /*margin-bottom:20px;*/
+}
+#test-submit{
+    /*float:right;*/
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+#taste-output,
+#effect-output,
+#other-output,
+#type-output{
+    width: 170px;
+    text-align: left;
+    padding-bottom: 30px;
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    /* margin: 0 auto;
+    padding-left: 140px;*/
+}
+#taste-output span,
+#effect-output span,
+#other-output span,
+#type-output span{
+    font-weight:bold;
+}
+#es-output-wrapper{
+    font-size: 20px;
+    font-weight: bold;
+    text-align:center;
+    margin-bottom:9px;
+}
+#es-output-wrapper span{
+    font-weight:normal;
+}
+
+/*#es-output{
+    width: 230px;
+    text-align: left;
+    padding-bottom: 30px;
+    display:inline-block;
+    vertical-align: top;
+}*/
+#thc-output{
+    background:#050505;
+    color:#fff;
+}
+#thca-output{
+    background:#212121;
+    color:#fff;
+}
+#thcv-output{
+    background:#343634;
+    color:#fff;
+}
+#thc8-output{
+    background:#2D0A0A;
+    color:#fff;
+}
+#thc10-output{
+    background:#482D2D;
+    color:#fff;
+}
+#thco-output{
+    background:#2D1616;
+    color:#fff;
+}
+#cbd-output{
+    background:#B7B6B6;
+}
+#cbda-output{
+    background:#C5C3C3;
+}
+#cbdv-output{
+    background:#9A9C9A;
+    color:#fff;
+}
+#cbg-output{
+    background:#DFD8D8;
+}
+#cbga-output{
+    background:#EDDFDF;
+}
+#cbn-output{
+    background:#3F4E40;
+    color:#fff;
+}
+#cbc-output{
+    background:#828983;
+    color:#fff;
+}
+#main-terp{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#total-elements-wrapper{
+    margin-bottom:20px;
+}
+#total-cannabinoids {
+    font-size: 20px;
+    font-weight: bold;
+    text-align:center;
+}
+#product-name-wrapper{
+    font-size:25px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+#net-weight-output{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+#total-cannabinoids {
+    padding:10px;
+}
+
+#cannabinoids-list,
+#terpenes-list{
+    padding:10px;
+}
+
+#custom-content-output2{
+    margin-top:15px;
+}
+#circle{
+    cursor:pointer;
+}
+
+
+/***********************************************************************************/
+/* S G I M A N */
+.tred {
+    color: red;
+}
+.tblue {
+    color: blue;
+}
+.tgreen {
+    color: green;
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+/************************************************************************************
+  BUTTON
+  https://www.freecodecamp.org/news/css-button-style-hover-color-and-background/
+************************************************************************************/
+.button {
+    /*position: absolute;
+    top:50%;*/
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    padding:0 10px 0 10px;
+    min-height:30px;
+    min-width: 120px;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.button:active {
+    background-color: #ffbf00;
+}
+.info {
+    text-align:center;
+    margin: 20px 0 0 0;
+    width:100%;
+}
